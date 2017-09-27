@@ -3,13 +3,13 @@
 const typeDetect = require ('type-detect');
 
 /* eslint-disable no-self-compare */
-const isNull = x => x !== x;
+const isNaN = x => x !== x;
 /* eslint-enable no-self-compare */
 
 const breakdownNumber = x => (
     
     /* eslint-disable indent */
-    (isNull (x))
+    (isNaN (x))
         ? 'NaN'
         : (!isFinite (x))
         ? 'Infinity'
