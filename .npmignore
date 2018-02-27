@@ -1,0 +1,4 @@
+*
+!test/test.js
+!dist/number-detect.min.js
+!src/number-detect.js
