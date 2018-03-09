@@ -1,12 +1,12 @@
 {
   "name": "number-detect",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Thin wrapper around the chaijs/type-detect library",
-  "main": "./bin/number-detect.min.js",
+  "main": "./dist/number-detect.js",
   "module": "./src/number-detect.js",
   "scripts": {
-    "build": "bash ./scripts/build.sh || echo Compilation failed",
-    "test": "node ./test/test.js | tap-dot || echo Tests failed"
+    "build": "bash ./scripts/build.sh",
+    "test": "node ./test/test.js | tap-dot"
   },
   "repository": {
     "type": "git",
@@ -25,11 +25,14 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
     "eslint": "^4.3.0",
     "tap-dot": "^1.0.5",
     "tape": "^4.8.0",
-    "type-detect": "^4.0.3",
-    "uglify-js": "^3.0.27"
+    "type-detect": "^4.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }

@@ -1,5 +1,5 @@
-import test from 'tape';
-import {numberDetect} from './number-detect.js';
+const test = require ('tape');
+const {numberDetect} = require ('../dist/number-detect.js');
 
 test ('Basic tests', function (assert) {
     

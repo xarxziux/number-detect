@@ -1,9 +1,21 @@
 # NUMBER-DETECT CHANGE LOG #
 
+## 2018-03-09
+
+### Changed
+- build.sh: moved main build process to a separate Node script for simplicity.
+- package.json, build.sh: removed uglify-js dependency and build step as that should be done by the consuming project.
+- test.js: converted test script to CommonJS syntax.
+- number-detect.js: removed unnecessary parentheses.
+
+### Added
+- build.js: added Node build script.
+- test/.eslintrc.js, scripts/.eslintrc.js: added custom Node-enabled ESLint config to test and script directories.
+
 ## 2018-02-14
 
 ### Changed
-- build.sh: updated build script to accomodate new target name and switch from babel-preset-2015 to babel-preset-env.
+- build.sh: updated build script to accommodate new target name and switch from babel-preset-2015 to babel-preset-env.
 - .npmignore: included main source file.
 - package.json: added "module" property.
 - package.json: replaced babel-preset-2015 with babel-preset-env.

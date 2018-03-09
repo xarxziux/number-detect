@@ -13,14 +13,10 @@ build_num="$((build_num + 1))"
 echo -n "${build_num}" > build_number
 
 # Create the ES5 version
-babel ./src/number-detect.js -o ./tmp/number-detect.js
-babel ./test/test.js -o ./tmp/test.js
+node ./scripts/build.js
 
 # Run tests
-node ./tmp/test.js | tap-dot
-
-# Create the minimised version
-uglifyjs ./tmp/number-detect.js -c -m -o ./dist/number-detect.min.js
+node ./test/test.js | tap-dot
 
 # Ask for a commit message
 echo
