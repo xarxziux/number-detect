@@ -1,6 +1,6 @@
 'use strict';
 
-const typeDetect = require ('type-detect');
+import typeDetect from 'type-detect';
 
 /* eslint-disable no-self-compare */
 const isNaN = x => x !== x;
@@ -43,4 +43,4 @@ const numberDetect = x => {
     
 };
 
-module.exports = numberDetect;
+export default numberDetect;
