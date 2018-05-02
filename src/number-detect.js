@@ -1,4 +1,4 @@
-'use strict';
+/** @format */
 
 import typeDetect from 'type-detect';
 
@@ -6,41 +6,21 @@ import typeDetect from 'type-detect';
 const isNaN = x => x !== x;
 /* eslint-enable no-self-compare */
 
-const breakdownNumber = x => (
-    
-    /* eslint-disable indent */
-    (isNaN (x))
-        ? 'NaN'
-        : (!isFinite (x))
-        ? 'Infinity'
-        : 'number'
-    /* eslint-disable indent */
-    
-);
+const breakdownNumber = x =>
+    /* eslint-disable-next-line indent */
+    isNaN(x) ? 'NaN' : !isFinite(x) ? 'Infinity' : 'number';
 
-const breakdownObject = x => (
-    
-    (x === null)
-        ? 'null'
-        : typeDetect (x)
-    
-);
+const breakdownObject = x => (x === null ? 'null' : typeDetect(x));
 
 const hashTable = {
-    
     number: breakdownNumber,
     object: breakdownObject
-    
 };
 
-const numberDetect = x => {
-    
+export const numberDetect = x => {
+
     const xType = typeof x;
-    
-    return ((hashTable [xType])
-        ? hashTable [xType](x)
-        : xType);
-    
-};
 
-export default numberDetect;
+    return hashTable[xType] ? hashTable[xType](x) : xType;
+
+};

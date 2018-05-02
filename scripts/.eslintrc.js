@@ -1,16 +1,16 @@
 module.exports = {
-
+    
     env: {
-        "browser": true,
+        "node": true,
         "es6": true
     },
-
+    
     parserOptions: {
-
+        
         ecmaVersion: 6,
         sourceType: "module",
         ecmaFeatures: {
-
+            
             "arrowFunctions": true,
             "binaryLiterals": true,
             "blockBindings": true,
@@ -34,12 +34,12 @@ module.exports = {
             "unicodeCodePointEscapes": true,
             "globalReturn": true,
             "jsx": false
-
+            
         }
     },
-
+    
     rules: {
-
+        
         //
         //Possible Errors
         //
@@ -75,7 +75,7 @@ module.exports = {
         "use-isnan": 2, // disallow comparisons with the value NaN
         "valid-jsdoc": 2, // Ensure JSDoc comments are valid (off by default)
         "valid-typeof": 2, // Ensure that the results of typeof are compared against a valid string
-
+        
         //
         // Best Practices
         //
@@ -131,14 +131,14 @@ module.exports = {
         "vars-on-top": 2, // requires to declare all vars on top of their containing scope (off by default)
         "wrap-iife": 2, // require immediate function invocation to be wrapped in parentheses (off by default)
         "yoda": 2, // require or disallow Yoda conditions
-
+        
         //
         // Strict Mode
         //
         // These rules relate to using strict mode.
         //
         "strict": 0, // controls location of Use Strict Directives. 0: required by `babel-eslint`
-
+        
         //
         // Variables
         //
@@ -154,7 +154,7 @@ module.exports = {
         "no-undefined": 2, // disallow use of undefined variable (off by default)
         "no-unused-vars": 2, // disallow declaration of variables that are not used in the code
         "no-use-before-define": 2, // disallow use of variables before they are defined
-
+        
         //
         //Stylistic Issues
         //
@@ -212,7 +212,7 @@ module.exports = {
         "space-unary-ops": [2, {"words": true, "nonwords": false}], // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
         "spaced-comment": [2, "always"], // require or disallow a space immediately following the // in a line comment (off by default)
         "wrap-regex": 0, // require regex literals to be wrapped in parentheses (off by default)
-
+        
         //
         // ECMAScript 6
         //
@@ -220,7 +220,7 @@ module.exports = {
         //
         "no-var": 2, // require let or const instead of var (off by default)
         "generator-star-spacing": [2, "before"], // enforce the spacing around the * in generator functions (off by default)
-
+        
         //
         // Legacy
         //
@@ -234,6 +234,6 @@ module.exports = {
         "max-statements": 0, // specify the maximum number of statement allowed in a function (off by default)
         "no-bitwise": 0, // disallow use of bitwise operators (off by default)
         "no-plusplus": 2, // disallow use of unary operators, ++ and -- (off by default)
-
+        
     }
 };

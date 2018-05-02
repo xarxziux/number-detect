@@ -3,7 +3,7 @@
 ## 2017-08-03
 
 ### Changed
-- Removed Babel from the build workflow and depedency list.
+- Removed Babel from the build workflow and dependency list.
 - Rewrote project using ES6 syntax.
 - Replaced branching logic with a hash table.
 - Replaced JSHint with ESLint.
