@@ -1,7 +1,7 @@
 /** @format */
 
 import test from 'tape';
-import {numberDetect as typeOf} from '../src/number-detect.js';
+import {numberDetect as typeOf} from '../src/number-detect.mjs';
 
 test('Basic tests', function (assert) {
 
