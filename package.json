@@ -6,7 +6,9 @@
   "module": "./src/number-detect.mjs",
   "scripts": {
     "build": "bash ./scripts/build.sh",
-    "test": "node --experimental-modules ./test/prebuild.mjs"
+    "test": "node --experimental-modules ./test/prebuild.mjs && node ./test/postbuild.js",
+    "preversion": "npm run test",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",

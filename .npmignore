@@ -1,4 +1,5 @@
 *
-!test/test.js
-!dist/number-detect.js
-!src/number-detect.js
+!test/prebuild.js
+!test/postbuild.js
+!dist/number-detect.min.js
+!src/number-detect.mjs
