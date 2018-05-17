@@ -6,7 +6,7 @@
   "module": "./src/number-detect.mjs",
   "scripts": {
     "build": "bash ./scripts/build.sh",
-    "test": "node --experimental-modules ./test/prebuild-tests.mjs"
+    "test": "node --experimental-modules ./test/prebuild.mjs"
   },
   "repository": {
     "type": "git",

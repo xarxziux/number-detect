@@ -6,6 +6,12 @@
 
 ### Changed
 
+*   package.json: fixed the name of the file being called by the test script.
+
+## 2018-05-16
+
+### Changed
+
 *   number-detect.mjs: renamed main source file to .mjs to facilitate direct running in Node.
 *   build.sh: redesigned simplified build script using only Babel and UglifyJS.
 *   Incorporated Prettier library.
