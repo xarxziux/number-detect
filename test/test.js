@@ -1,11 +1,11 @@
 /** @format */
 
 const test = require('tape');
-const numberDetect = require('../dist/number-detect.min.js');
+const numberDetect = require('../src/index.js');
 const testMessage =
     'Simplified tests to verify that the bundled package is working';
 
-test(testMessage, function (assert) {
+test(testMessage, function(assert) {
 
     assert.plan(14);
 
@@ -46,13 +46,13 @@ test(testMessage, function (assert) {
             'that function returns the expected values.'
         );
         assert.end();
-    
+
     } catch ({message}) {
 
         /* eslint-disable no-console */
         console.log(message);
         assert.end();
-    
+
     }
 
 });

@@ -1,16 +1,15 @@
-module.exports = {
+/** @format */
 
+module.exports = {
     env: {
-        node: true,
+        browser: true,
         es6: true
     },
 
     parserOptions: {
-
         ecmaVersion: 6,
         sourceType: 'module',
         ecmaFeatures: {
-
             arrowFunctions: true,
             binaryLiterals: true,
             blockBindings: true,
@@ -34,12 +33,10 @@ module.exports = {
             unicodeCodePointEscapes: true,
             globalReturn: true,
             jsx: false
-
         }
     },
 
     rules: {
-
         //
         //Possible Errors
         //
@@ -67,7 +64,11 @@ module.exports = {
         'no-negated-in-lhs': 2, // disallow negation of the left operand of an in expression
         'no-obj-calls': 2, // disallow the use of object properties of the global object (Math and JSON) as functions
         'no-regex-spaces': 2, // disallow multiple spaces in a regular expression literal
-        'quote-props': ['error', 'as-needed', {unnecessary: true, numbers: true}], // disallow reserved words being used as object literal keys (off by default)
+        'quote-props': [
+            'error',
+            'as-needed',
+            {unnecessary: true, numbers: true}
+        ], // disallow reserved words being used as object literal keys (off by default)
         'no-sparse-arrays': 2, // disallow sparse arrays
         'no-unreachable': 2, // disallow unreachable statements after a return, throw, continue, or break statement
         'no-var': 2,
@@ -83,12 +84,12 @@ module.exports = {
         // They either prescribe a better way of doing something or help you avoid footguns.
         //
         'block-scoped-var': 0, // treat var statements as if they were block scoped (off by default). 0: deep destructuring is not compatible https://github.com/eslint/eslint/issues/1863
-        'complexity': 0, // specify the maximum cyclomatic complexity allowed in a program (off by default)
+        complexity: 0, // specify the maximum cyclomatic complexity allowed in a program (off by default)
         'consistent-return': 2, // require return statements to either always or never specify values
-        'curly': ['error', 'multi'], // specify curly brace conventions for all control statements
+        curly: ['error', 'multi'], // specify curly brace conventions for all control statements
         'default-case': 2, // require default case in switch statements (off by default)
         'dot-notation': 2, // encourages use of dot notation whenever possible
-        'eqeqeq': 2, // require the use of === and !==
+        eqeqeq: 2, // require the use of === and !==
         'guard-for-in': 2, // make sure for-in loops have an if statement (off by default)
         'no-alert': 2, // disallow the use of alert, confirm, and prompt
         'no-caller': 2, // disallow use of arguments.caller or arguments.callee
@@ -125,19 +126,22 @@ module.exports = {
         'no-throw-literal': 2, // restrict what can be thrown as an exception (off by default)
         'no-unused-expressions': 2, // disallow usage of expressions in statement position
         'no-void': 2, // disallow use of void operator (off by default)
-        'no-warning-comments': [0, {terms: ['todo', 'fixme'], location: 'start'}], // disallow usage of configurable warning terms in comments": 2, // e.g. TODO or FIXME (off by default)
+        'no-warning-comments': [
+            0,
+            {terms: ['todo', 'fixme'], location: 'start'}
+        ], // disallow usage of configurable warning terms in comments": 2, // e.g. TODO or FIXME (off by default)
         'no-with': 2, // disallow use of the with statement
-        'radix': 2, // require use of the second argument for parseInt() (off by default)
+        radix: 2, // require use of the second argument for parseInt() (off by default)
         'vars-on-top': 2, // requires to declare all vars on top of their containing scope (off by default)
         'wrap-iife': 2, // require immediate function invocation to be wrapped in parentheses (off by default)
-        'yoda': 2, // require or disallow Yoda conditions
+        yoda: 2, // require or disallow Yoda conditions
 
         //
         // Strict Mode
         //
         // These rules relate to using strict mode.
         //
-        'strict': 0, // controls location of Use Strict Directives. 0: required by `babel-eslint`
+        strict: 0, // controls location of Use Strict Directives. 0: required by `babel-eslint`
 
         //
         // Variables
@@ -160,13 +164,17 @@ module.exports = {
         //
         // These rules are purely matters of style and are quite subjective.
         //
-        indent: [1, 4, {
+        indent: [
+            1,
+            4,
+            {
                 FunctionDeclaration: {body: 1, parameters: 2},
                 FunctionExpression: {body: 1, parameters: 2},
                 ignoredNodes: ['ConditionalExpression']
-        }], // this option sets a specific tab width for your code (off by default)
-        'brace-style': ['error', '1tbs', {allowSingleLine: true }], // enforce one true brace style (off by default)
-        'camelcase': 2, // require camel case names
+            }
+        ], // this option sets a specific tab width for your code (off by default)
+        'brace-style': ['error', '1tbs', {allowSingleLine: true}], // enforce one true brace style (off by default)
+        camelcase: 2, // require camel case names
         'comma-spacing': [2, {before: false, after: true}], // enforce spacing before and after comma
         'comma-style': [2, 'last'], // enforce one true comma style (off by default)
         'consistent-this': [2, '_this'], // enforces consistent naming when capturing the current execution context (off by default)
@@ -185,8 +193,8 @@ module.exports = {
         'no-multiple-empty-lines': [2, {max: 2}], // disallow multiple empty lines (off by default)
         'no-nested-ternary': 0, // disallow nested ternary expressions (off by default)
         'no-new-object': 2, // disallow use of the Object constructor
-        'no-spaced-func': 1, // disallow space between function identifier and application
-        'func-call-spacing': 0, //['error', 'always', {allowNewlines: true}],
+        //"no-spaced-func": 1, // disallow space between function identifier and application
+        'func-call-spacing': 0, //["error", "always", {allowNewlines: true}],
         'no-ternary': 0, // disallow the use of ternary operators (off by default)
         'multiline-ternary': ['error', 'always-multiline'],
         'no-trailing-spaces': ['error', {skipBlankLines: true}], // disallow trailing whitespace at the end of lines
@@ -196,19 +204,19 @@ module.exports = {
         'operator-assignment': [2, 'never'], // require assignment operator shorthand where possible or prohibit it entirely (off by default)
         'padded-blocks': [2, 'always'], // enforce padding within blocks (off by default)
         'quote-props': [2, 'as-needed'], // require quotes around object literal property names (off by default)
-        'quotes': [2, 'single'], // specify whether double or single quotes should be used
-        'semi': [2, 'always'], // require or disallow use of semicolons instead of ASI
+        quotes: [2, 'single'], // specify whether double or single quotes should be used
+        semi: [2, 'always'], // require or disallow use of semicolons instead of ASI
         'semi-spacing': [2, {before: false, after: true}], // enforce spacing before and after semicolons
         'sort-vars': 0, // sort variables within the same declaration block (off by default)
         'keyword-spacing': [2, {before: true, after: true}], // require a space after certain keywords (off by default)
         'space-before-blocks': [2, 'always'], // require or disallow space before blocks (off by default)
-        'space-before-function-paren': ['error', 'never'], // require or disallow space before function opening parenthesis (off by default)
-        // 'space-in-brackets': [1, 'never'], // require or disallow spaces inside brackets (off by default)
+        'space-before-function-paren': [2, 'always'], // require or disallow space before function opening parenthesis (off by default)
+        // "space-in-brackets": [1, "never"], // require or disallow spaces inside brackets (off by default)
         'object-curly-spacing': ['error', 'never'],
-        'array-bracket-spacing': ['error','never'],
+        'array-bracket-spacing': ['error', 'never'],
         'space-in-parens': [2, 'never'], // require or disallow spaces inside parentheses (off by default)
         'space-infix-ops': [2, {int32Hint: false}], // require spaces around operators
-        // 'space-return-throw-case': [1, 'always'], // require a space after return, throw, and case
+        // "space-return-throw-case": [1, "always"], // require a space after return, throw, and case
         'space-unary-ops': [2, {words: true, nonwords: false}], // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
         'spaced-comment': [2, 'always'], // require or disallow a space immediately following the // in a line comment (off by default)
         'wrap-regex': 0, // require regex literals to be wrapped in parentheses (off by default)
@@ -233,7 +241,6 @@ module.exports = {
         'max-params': [2, 5], // limits the number of parameters that can be used in the function declaration. (off by default)
         'max-statements': 0, // specify the maximum number of statement allowed in a function (off by default)
         'no-bitwise': 0, // disallow use of bitwise operators (off by default)
-        'no-plusplus': 2, // disallow use of unary operators, ++ and -- (off by default)
-
+        'no-plusplus': 2 // disallow use of unary operators, ++ and -- (off by default)
     }
 };

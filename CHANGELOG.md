@@ -2,6 +2,12 @@
 
 # NUMBER-DETECT CHANGE LOG
 
+## 2018-10-09
+
+### Changed
+
+*   Simplified package by dropping browser support and converting it to a pure Node module.
+
 ## 2018-05-16
 
 ### Changed
