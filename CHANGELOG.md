@@ -8,6 +8,13 @@
 
 *   Simplified package by dropping browser support and converting it to a pure Node module.
 
+## 2018-05-17
+
+### Changed
+
+*   package.json: added preversion and postversion scripts for automating version updates.
+*   .npmignore: corrected the names of the source, bundle and test files.
+
 ## 2018-05-16
 
 ### Changed
