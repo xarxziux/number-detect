@@ -1,6 +1,6 @@
 {
   "name": "number-detect",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Thin wrapper around the chaijs/type-detect library",
   "main": "./src/index.js",
   "module": "./src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-      "url": "https://gitlab.com/xarxziux/number-detect"
+    "url": "https://gitlab.com/xarxziux/number-detect"
   },
   "keywords": [
     "javascript",
