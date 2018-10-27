@@ -17,3 +17,5 @@ The type-detect library only deals with 'object' typeofs and simply returns ever
 ```Bash
 npm install --save number-detect
 ```
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/210754900d1341c89763877a29dc7558)](https://www.codacy.com/app/xarxziux/number-detect?utm_source=gitlab.com&amp;utm_medium=referral&amp;utm_content=xarxziux/number-detect&amp;utm_campaign=Badge_Grade)
