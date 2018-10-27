@@ -1,6 +1,6 @@
 {
   "name": "number-detect",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Thin wrapper around the chaijs/type-detect library",
   "main": "./src/index.js",
   "module": "./src/index.js",
