@@ -1,5 +1,3 @@
-/** @format */
-
 import typeDetect from 'type-detect'
 
 /* eslint-disable no-self-compare */

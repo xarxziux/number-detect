@@ -1,4 +1,3 @@
 *
 !test/test.js
-!src/index.js
-!src/core/number-detect.js
+!src/main.js
